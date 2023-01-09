@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What we deliver</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 50px 0px;
+            gap: 20px 40px;
+            background-color: #eff0f4;
+        }
+        .container .drop{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),25px 35px 20px rgba(0,0,0,0.05),25px 30px 30px rgba(0,0,0,0.05), inset -20px -20px 25px rgba(255,255,255,0.9);
+            transition: 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .drop:nth-child(1){
+            border-radius: 63% 37% 37% 63% / 41% 56% 44% 59% ;
+        }
+        .container .drop:nth-child(2){
+            border-radius: 71% 29% 39% 61% / 58% 54% 46% 42%  ;
+        }
+        .container .drop:nth-child(3){
+            border-radius: 27% 73% 34% 66% / 77% 49% 51% 23%  ;
+        }
+        .container .drop:nth-child(4){
+            border-radius: 37% 63% 68% 32% / 68% 51% 49% 32%   ;
+        }
+        .container .drop:hover{
+            border-radius: 50%;
+        }
+        .container .drop::before{
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            width: 35px;
+            height: 35px;
+            left: 210px;
+            top: 50px;
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+        .container .drop::after{
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            width: 15px;
+            height: 15px;
+            left: 240px;
+            top: 85px;
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+        .container .drop .content{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 40px;
+            gap: 15px;
+        }
+        .container .drop .content b{
+            font-size: x-large;
+        }
+        .container .drop .content a{
+            position: relative;
+            padding: 10px 25px;
+            color: #fff;
+            border-radius: 25px;
+            text-decoration: none;
+            opacity: 0.75;
+            text-shadow: 0 2px 2px rgba(0,0,0,0.25);
+            transition: 0.5s;
+        }
+        #drop1 .content a{
+            background-color: #0080dc;
+        }
+        #drop1 .content b{
+            color: #0080dc;
+        }
+        #drop2 .content a{
+            background-color: #04e043;
+        }
+        #drop2 .content b{
+            color: #04e043;
+        }
+        #drop3 .content a{
+            background-color: #e0bb04;
+        }
+        #drop3 .content b{
+            color: #e0bb04;
+        }
+        #drop4 .content a{
+            background-color: #fb1858;
+        }
+        #drop4 .content b{
+            color: #fb1858;
+        }
+        .container .drop .content a:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="drop" id="drop1">
+            <div class="content">
+                <b>Libraries</b>
+                <p>Virtual Libraries with a  range of services, access to digital materials,assessments and simulation software</p>
+                <a href="https://cnctrain.com/packages">Explore</a>
+            </div>
+        </div>
+        <div class="drop" id="drop2">
+            <div class="content">
+                <b>Internships</b>
+                <p>Workshop based Engineering internships</p>
+                <a href="https://cnctrain.com/internships">Explore</a>
+            </div>
+        </div>
+        <div class="drop" id="drop3">
+            <div class="content">
+                <b>FDP</b>
+                <p>Faculty development program evolving with new courses and technologies</p>
+                <a href="https://cnctrain.com/faculty-development">Explore</a>
+            </div>
+        </div>
+        <div class="drop" id="drop4">
+            <div class="content">
+                <b>Resellers</b>
+                <p>Become our resellers partner for the development of the education sector</p>
+                <a href="https://cnctrain.com/Reseller">Explore</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

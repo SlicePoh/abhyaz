@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libraries</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container_box {
+        padding: 30px 0px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .boxes{
+        display: flex;
+        justify-content: center;
+       
+        gap: 0px 10px;
+        padding: 20px;
+        margin: 0px 5vh;
+    }
+    .box{
+        width: 324px;
+        border: 0.1px solid #eee;
+        text-align: center;
+        background: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+
+    .box:hover {
+        box-shadow: 0.5rem 0.5rem 1rem rgb(220, 218, 218);
+        transition: 400ms;
+        transform: translateY(-5px);
+    }
+    .box:hover {
+        box-shadow: 0.5rem 0.5rem 1rem rgb(220, 218, 218);
+        transition: 400ms;
+        transform: translateY(-5px);
+    }
+    .box .nav {
+        padding: 25px 20px;
+        clip-path: polygon(100% 0, 100% 61%, 51% 100%, 0 61%, 0 0);
+        background: linear-gradient( to bottom, #0059ff, #00c8ff);
+        border-top: 1px solid rgb(0, 140, 255);
+        border-radius: 20px;
+        justify-content: center;
+        color: white;
+    }
+    .box .nav:hover {
+        background: linear-gradient( to bottom, #0043c0, #0098c2);
+    }
+    .features {
+        padding: 20px;
+        text-align: left;
+    }
+    .features>* {
+        color: rgb(113, 113, 113);
+        border-bottom: 1px solid rgb(117, 117, 117);
+    }
+    .features>*:hover {
+        transition: 400ms;
+        color: black;
+        transform: translateY(-3px);
+    }
+    #features1>*{
+        padding: 10px 0px;
+        margin-bottom: 19px;
+    }
+    #features3>*{
+        padding: 20px 0px;
+        margin-bottom: 59px;
+    }
+    .btn {
+        width: 50%;
+        padding: 15px;
+        font-size: medium;
+        font-weight: 600;
+        text-align: center;
+        color: #eee;
+        border: 1px;
+        border-radius: 20px;
+        background: linear-gradient( to bottom, #0059ff, #00c8ff);
+    }
+    .btn:hover {
+        background: linear-gradient( to bottom, #0043c0, #0098c2);
+        font-size: 1.1rem;
+    }
+    .btn22{
+        margin-bottom: 10px;
+    }
+    #btn1{
+        margin: 30px 0px 10px 0px;
+    }
+    #btn2{
+        margin: 10px 0px;
+    }
+    #btn3{
+        margin: 95px 0px 10px 0px;
+    }
+    a:link{
+        text-decoration: none;
+
+    }
+    @media (max-width: 1197px){
+        #btn3{
+            margin: 20px 0px;
+        }
+        #features3>*{
+            padding: 5px 0px;
+        }
+    }
+    @media only screen and (max-width: 780px) {
+        .boxes{
+            font-size: small;
+            padding: 10px 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+        }
+    }
+
+    @media (max-width: 827px){
+        #btn1{
+            margin: 10px 0px;
+        }
+        #features1>*{
+            padding: 5px 0px;
+        }
+        .container_box{
+            font-size: small;
+            padding: 10px 0px;
+            
+        }
+    }
+    @media (max-width: 450px){
+        .container_box{
+            font-size: small;
+            padding: 5px 0px;
+        }
+        .boxes{
+            margin: 0px;
+            padding: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container_box">
+        <div class="boxes">
+            <div class="box" id="box1">
+                <div class="nav">
+                <h2>E-Learning Library</h2>
+            </div>
+            <div class="features" id="features1">
+                <div class="SF">
+                    <p><b>Specially For -</b>
+                    Polytechnics, ITI, Engineering Colleges</p>
+                </div>
+                <div class="Tech">
+                    <p><b>Technology Covered -</b>
+                    CNC, Hydraulics, Robotics, Sensors, Pneumatics </p>
+                </div>
+                <div class="SA">        
+                    <p><b>Software Access -</b>
+                   CNCTrain, MRobot, Aristosim, Workspace, Automsim, Automgen, CIMSIM.</p>
+                </div>
+                <div class="WWD">
+                    <p><b>What we deliver -</b>
+                    Social Learning, Built-in Knowledge Assessment, Interactive E-Learning Courses, FDP, Internships</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#">
+                    <button class="btn" id="btn1" type="button" >Access Now</button>
+                </a>
+            </div>
+       <div class="button">
+                <a href="#">
+                    <button class="btn btn22" type="button" >Learn More</button>
+                </a>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <div class="nav">
+                <h2>Practical Library</h2>
+            </div>
+            <div class="features" id="features2">
+                <div class="SF">
+                    <p><b>Specially For -</b>
+                    Polytechnics, ITI, Affiliated Engineering Colleges, Training Centres</p>
+                </div>
+                <div class="Tech">
+                    <p><b>Technology Covered -</b>
+                    PLC Automation, Mechatronics, CNC, Hydraulics, Robotics, Sensors, Pneumatics </p>
+                </div>
+                <div class="SA">        
+                    <p><b>Software Access -</b>
+                    CNCTrain, MRobot, Aristosim, Workspace, Automsim, Automgen, CIMSIM.</p>
+                </div>
+                <div class="SA">        
+                    <p><b>Add On Softwares -</b>
+                    Virtual Universe Pro, Workspace LT, Automsim, Automgen</p>
+                </div>
+                <div class="WWD">
+                    <p>
+                    <b>What we deliver -</b>
+                     Access to CNC Library, Online Delivery of Engineering Courses, Access to Interactive E-Learning Courses, FDP,  Access to Licensed Software, Internships</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#">
+                    <button class="btn" id="btn2" type="button" >Access Now</button>
+                </a>
+            </div>
+             <div class="button">
+                <a href="#">
+                    <button class="btn btn22" type="button" >Learn More</button>
+                </a>
+            </div>
+        </div>
+        <div class="box" id="box3">
+            <div class="nav">
+                <h2>Shopfloor Library</h2>
+            </div>
+            <div class="features" id="features3">
+                <div class="SF">
+                    <b>Specially For -</b>
+                    <span>Industries</span>
+                </div>
+                <div class="Tech">
+                    <b>Technology Covered -</b>
+                    <span> CNC, Automation, Robotics</span>
+                </div>
+                <div class="WWD">
+                    <b>What we deliver -</b>
+                    <span> Built-in Knowledge Assessment, Reports/Certificates, Interactive E-Learning Courses</span>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#">
+                    <button class="btn" id="btn3" type="button" >Access Now</button>
+                </a>
+            </div>
+            <div class="button">
+                <a href="#">
+                    <button class="btn btn22" type="button" >Learn More</button>
+                </a>
+            </div>
+        </div>
+       
+        </div>
+    </div>
+</body>
+</html>
